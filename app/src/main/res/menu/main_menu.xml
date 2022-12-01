@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_address"
+            android:title="@string/menu_address"
+            android:icon="@drawable/addressvector"/>
+        <item
+            android:id="@+id/nav_categeories"
+            android:title="@string/menu_categeories"
+            android:icon="@drawable/ic_baseline_category_24"/>
+        <item
+            android:id="@+id/nav_cart"
+            android:title="@string/menu_cart"
+            android:icon="@drawable/ic_baseline_shopping_cart_24"/>
+        <item
+            android:id="@+id/nav_orders"
+            android:title="@string/menu_orders"
+            android:icon="@drawable/myorders"/>
+
+    </group>
+
+    <item
+        android:title="Profile">
+
+        <menu>
+
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_profile"
+                    android:title="Profile"
+                    android:icon="@drawable/profile"/>
+                <item
+                    android:id="@+id/nav_Logout"
+                    android:title="Logout"
+                    android:icon="@drawable/logouth"/>
+
+            </group>
+
+        </menu>
+
+    </item>
+
+    <item
+        android:title="Other">
+
+        <menu>
+
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_contact"
+                    android:title="Contact Us"
+                    android:icon="@drawable/ic_baseline_call_24"/>
+                <item
+                    android:id="@+id/nav_Rateus"
+                    android:title="RateUs"
+                    android:icon="@drawable/ic_baseline_rating_24"/>
+                <item
+                    android:id="@+id/nav_share"
+                    android:title="share"
+                    android:icon="@drawable/ic_baseline_share_24"/>
+
+            </group>
+
+        </menu>
+
+    </item>
+
+</menu>

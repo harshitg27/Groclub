@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "422676909724",
+    "firebase_url": "https://groclub-5393c.firebaseio.com",
+    "project_id": "groclub-5393c",
+    "storage_bucket": "groclub-5393c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:422676909724:android:a7d50f16cca64d91abe759",
+        "android_client_info": {
+          "package_name": "com.gclub.groclub"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "422676909724-1kocf6sekd5ggmfreoq23g5oo0am17qs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBglXYAIGbZiSyHXMF2MeaWwlZEazWuDZI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "422676909724-1kocf6sekd5ggmfreoq23g5oo0am17qs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/sign"
+        android:layout_width="108dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="220dp"
+        app:srcCompat="@drawable/sign" />
+
+    <TextView
+        android:id="@+id/comnametv"
+        android:layout_width="251dp"
+        android:layout_height="104dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="220dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="74dp"
+        android:fontFamily="@font/bangers"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="@string/CompanyName"
+        android:textColor="@android:color/white"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/slogantv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/comnametv"
+        android:fontFamily="cursive"
+        android:gravity="center"
+        android:text="@string/maintagline"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:textSize="25sp" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animation_view"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:lottie_fileName="splash.json"
+        app:lottie_loop="true"
+        app:lottie_autoPlay="true"
+        android:layout_gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"/>
+
+</RelativeLayout>

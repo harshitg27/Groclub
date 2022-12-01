@@ -1,0 +1,519 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Categories">
+
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/backcolour">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:foregroundGravity="center_vertical"
+            android:gravity="center_vertical"
+            android:text="@string/CompanyName"
+            android:textColor="@color/whitecolour"
+            android:textSize="35sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="Shop By Category"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:id="@+id/shopandshampoo"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/categoriesicon"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:elevation="2dp"
+                        android:background="@drawable/photosbc"
+                        android:layout_height="100dp"
+                        android:layout_margin="3dp"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_width="match_parent">
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:padding="5dp"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/dettol" />
+
+                    </RelativeLayout>
+
+
+                    <TextView
+                        android:gravity="center"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:text="Shop and Shampoo" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/facecare"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/categoriesicon"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:elevation="2dp"
+                        android:background="@drawable/photosbc"
+                        android:layout_height="100dp"
+                        android:layout_margin="3dp"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_width="match_parent">
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:padding="5dp"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/dettol" />
+
+                    </RelativeLayout>
+
+
+                    <TextView
+                        android:gravity="center"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:text="Face Care" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/perfume"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/categoriesicon"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:elevation="2dp"
+                        android:background="@drawable/photosbc"
+                        android:layout_height="100dp"
+                        android:layout_margin="3dp"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_width="match_parent">
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:padding="5dp"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/dettol" />
+
+                    </RelativeLayout>
+
+
+                    <TextView
+                        android:gravity="center"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:text="Perfumes" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/breakfastitem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/categoriesicon"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:elevation="2dp"
+                        android:background="@drawable/photosbc"
+                        android:layout_height="100dp"
+                        android:layout_margin="3dp"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_width="match_parent">
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:padding="5dp"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/dettol" />
+
+                    </RelativeLayout>
+
+
+                    <TextView
+                        android:gravity="center"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:text="Breakfast Items" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/noodlesandsauce"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/categoriesicon"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:elevation="2dp"
+                        android:background="@drawable/photosbc"
+                        android:layout_height="100dp"
+                        android:layout_margin="3dp"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_width="match_parent">
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:padding="5dp"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/tomatosause" />
+
+                    </RelativeLayout>
+
+
+                    <TextView
+                        android:gravity="center"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:text="Noodles and Sause" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/snacks"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/categoriesicon"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:elevation="2dp"
+                        android:background="@drawable/photosbc"
+                        android:layout_height="100dp"
+                        android:layout_margin="3dp"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_width="match_parent">
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_centerHorizontal="true"
+                            android:padding="5dp"
+                            android:src="@drawable/dettol" />
+
+                    </RelativeLayout>
+
+
+                    <TextView
+                        android:gravity="center"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:text="Snacks Items" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/masala"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/categoriesicon"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:elevation="2dp"
+                        android:background="@drawable/photosbc"
+                        android:layout_height="100dp"
+                        android:layout_margin="3dp"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_width="match_parent">
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:padding="5dp"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/dettol" />
+
+                    </RelativeLayout>
+
+
+                    <TextView
+                        android:gravity="center"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:text="Masala" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/kirana"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/categoriesicon"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:elevation="2dp"
+                        android:background="@drawable/photosbc"
+                        android:layout_height="100dp"
+                        android:layout_margin="3dp"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_width="match_parent">
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:padding="5dp"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/dettol" />
+
+                    </RelativeLayout>
+
+
+                    <TextView
+                        android:gravity="center"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:text="Kirana" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/dryfruit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/categoriesicon"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:elevation="2dp"
+                        android:background="@drawable/photosbc"
+                        android:layout_height="100dp"
+                        android:layout_margin="3dp"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_width="match_parent">
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:padding="5dp"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/dettol" />
+
+                    </RelativeLayout>
+
+
+                    <TextView
+                        android:gravity="center"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:text="Dry Fruits" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/categoriesicon"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:elevation="2dp"
+                        android:background="@drawable/photosbc"
+                        android:layout_height="100dp"
+                        android:layout_margin="3dp"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_width="match_parent">
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:padding="5dp"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/surfexecl" />
+
+                    </RelativeLayout>
+
+
+                    <TextView
+                        android:gravity="center"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:text="Deterge" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/categoriesicon"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:elevation="2dp"
+                        android:background="@drawable/photosbc"
+                        android:layout_height="100dp"
+                        android:layout_margin="3dp"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_width="match_parent">
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:padding="5dp"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/dettol" />
+
+                    </RelativeLayout>
+
+
+                    <TextView
+                        android:gravity="center"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:text="Wheat Items" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/categoriesicon"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:elevation="2dp"
+                        android:background="@drawable/photosbc"
+                        android:layout_height="100dp"
+                        android:layout_margin="3dp"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_width="match_parent">
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:padding="5dp"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/dettol" />
+
+                    </RelativeLayout>
+
+
+                    <TextView
+                        android:gravity="center"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:text="Sanitize home" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

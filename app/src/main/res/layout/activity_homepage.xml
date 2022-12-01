@@ -1,0 +1,990 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Homepage"
+    android:id="@+id/drawerlayout">
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigationview"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/menu_header"
+        app:menu="@menu/main_menu" />
+    
+   <LinearLayout
+       android:id="@+id/contentView"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/backcolour"
+        android:padding="10dp"
+        android:id="@+id/actionbar">
+        <ImageView
+            android:id="@+id/startview"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_baseline_dehaze_24"
+            android:layout_alignParentLeft="true"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_toLeftOf="@+id/cartview"
+            android:layout_toRightOf="@+id/startview"
+            android:gravity="left|center_vertical"
+            android:padding="5dp"
+            android:paddingLeft="10dp"
+            android:text="@string/CompanyName"
+            android:textColor="@color/whitecolour"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/cartview"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_baseline_shopping_cart_24"
+            android:layout_alignParentRight="true"
+            android:padding="3dp"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:background="#fff"
+        android:elevation="4dp"
+        android:layout_below="@id/actionbar"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="0dp"
+        android:layout_width="match_parent">
+
+        <TextView
+            android:layout_width="330dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginRight="0dp"
+            android:gravity="left|center_vertical"
+            android:layout_toRightOf="@+id/searchicon"
+            android:hint="Search..." />
+
+        <ImageView
+            android:id="@+id/searchicon"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/ic_baseline_search_24" />
+
+    </RelativeLayout>
+    <ScrollView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical">
+          
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp"
+                android:padding="5dp">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/informationrecycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp" />
+                
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+
+                        android:background="@color/bathtime"
+                        android:elevation="8dp"
+                        android:layout_height="60dp"
+                        android:layout_margin="10dp"
+                        android:layout_width="60dp">
+
+                        <ImageView
+                            android:layout_width="44dp"
+                            android:layout_height="39dp"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/bathtime" />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:gravity="center_horizontal"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:text="@string/bathitems"
+                        android:textAlignment="center" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+
+                        android:background="@color/bathtime"
+                        android:elevation="8dp"
+                        android:layout_height="60dp"
+                        android:layout_margin="10dp"
+                        android:layout_width="60dp">
+
+                        <ImageView
+                            android:layout_width="44dp"
+                            android:layout_height="39dp"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/bathtime" />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:gravity="center_horizontal"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:text="@string/bathitems"
+                        android:textAlignment="center" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+
+                        android:background="@color/bathtime"
+                        android:elevation="8dp"
+                        android:layout_height="60dp"
+                        android:layout_margin="10dp"
+                        android:layout_width="60dp">
+
+                        <ImageView
+                            android:layout_width="44dp"
+                            android:layout_height="39dp"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/bathtime" />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:gravity="center_horizontal"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:text="@string/bathitems"
+                        android:textAlignment="center" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+
+                        android:background="@color/bathtime"
+                        android:elevation="8dp"
+                        android:layout_height="60dp"
+                        android:layout_margin="10dp"
+                        android:layout_width="60dp">
+
+                        <ImageView
+                            android:layout_width="44dp"
+                            android:layout_height="39dp"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/bathtime" />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:gravity="center_horizontal"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:text="@string/bathitems"
+                        android:textAlignment="center" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+
+                        android:background="@color/bathtime"
+                        android:elevation="8dp"
+                        android:layout_height="60dp"
+                        android:layout_margin="10dp"
+                        android:layout_width="60dp">
+
+                        <ImageView
+                            android:layout_width="44dp"
+                            android:layout_height="39dp"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/bathtime" />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:gravity="center_horizontal"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:text="@string/bathitems"
+                        android:textAlignment="center" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:padding="5dp">
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="Shop By Category"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:id="@+id/shopandshampoo"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/categoriesicon"
+                        android:layout_weight="1"
+                        android:layout_margin="5dp"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:elevation="2dp"
+                            android:background="@drawable/photosbc"
+                            android:layout_height="100dp"
+                            android:layout_margin="3dp"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:layout_width="match_parent">
+
+                            <ImageView
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:padding="5dp"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/dettol" />
+
+                        </RelativeLayout>
+
+
+                        <TextView
+                            android:gravity="center"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:text="Shop and Shampoo" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/facecare"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/categoriesicon"
+                        android:layout_weight="1"
+                        android:layout_margin="5dp"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:elevation="2dp"
+                            android:background="@drawable/photosbc"
+                            android:layout_height="100dp"
+                            android:layout_margin="3dp"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:layout_width="match_parent">
+
+                            <ImageView
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:padding="5dp"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/dettol" />
+
+                        </RelativeLayout>
+
+
+                        <TextView
+                            android:gravity="center"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:text="Face Care" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/perfume"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/categoriesicon"
+                        android:layout_weight="1"
+                        android:layout_margin="5dp"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:elevation="2dp"
+                            android:background="@drawable/photosbc"
+                            android:layout_height="100dp"
+                            android:layout_margin="3dp"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:layout_width="match_parent">
+
+                            <ImageView
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:padding="5dp"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/dettol" />
+
+                        </RelativeLayout>
+
+
+                        <TextView
+                            android:gravity="center"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:text="Perfumes" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/breakfastitem"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/categoriesicon"
+                        android:layout_weight="1"
+                        android:layout_margin="5dp"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:elevation="2dp"
+                            android:background="@drawable/photosbc"
+                            android:layout_height="100dp"
+                            android:layout_margin="3dp"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:layout_width="match_parent">
+
+                            <ImageView
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:padding="5dp"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/dettol" />
+
+                        </RelativeLayout>
+
+
+                        <TextView
+                            android:gravity="center"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:text="Breakfast Items" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/noodlesandsauce"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/categoriesicon"
+                        android:layout_weight="1"
+                        android:layout_margin="5dp"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:elevation="2dp"
+                            android:background="@drawable/photosbc"
+                            android:layout_height="100dp"
+                            android:layout_margin="3dp"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:layout_width="match_parent">
+
+                            <ImageView
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:padding="5dp"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/tomatosause" />
+
+                        </RelativeLayout>
+
+
+                        <TextView
+                            android:gravity="center"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:text="Noodles and Sause" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/snacks"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/categoriesicon"
+                        android:layout_weight="1"
+                        android:layout_margin="5dp"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:elevation="2dp"
+                            android:background="@drawable/photosbc"
+                            android:layout_height="100dp"
+                            android:layout_margin="3dp"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:layout_width="match_parent">
+
+                            <ImageView
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:layout_centerHorizontal="true"
+                                android:padding="5dp"
+                                android:src="@drawable/dettol" />
+
+                        </RelativeLayout>
+
+
+                        <TextView
+                            android:gravity="center"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:text="Snacks Items" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/masala"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/categoriesicon"
+                        android:layout_weight="1"
+                        android:layout_margin="5dp"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:elevation="2dp"
+                            android:background="@drawable/photosbc"
+                            android:layout_height="100dp"
+                            android:layout_margin="3dp"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:layout_width="match_parent">
+
+                            <ImageView
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:padding="5dp"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/dettol" />
+
+                        </RelativeLayout>
+
+
+                        <TextView
+                            android:gravity="center"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:text="Masala" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/kirana"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/categoriesicon"
+                        android:layout_weight="1"
+                        android:layout_margin="5dp"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:elevation="2dp"
+                            android:background="@drawable/photosbc"
+                            android:layout_height="100dp"
+                            android:layout_margin="3dp"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:layout_width="match_parent">
+
+                            <ImageView
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:padding="5dp"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/dettol" />
+
+                        </RelativeLayout>
+
+
+                        <TextView
+                            android:gravity="center"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:text="Kirana" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/dryfruit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/categoriesicon"
+                        android:layout_weight="1"
+                        android:layout_margin="5dp"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:elevation="2dp"
+                            android:background="@drawable/photosbc"
+                            android:layout_height="100dp"
+                            android:layout_margin="3dp"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:layout_width="match_parent">
+
+                            <ImageView
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:padding="5dp"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/dettol" />
+
+                        </RelativeLayout>
+
+
+                        <TextView
+                            android:gravity="center"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:text="Dry Fruits" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/shop"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/imageseen"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Best Price"/>
+
+                    <RelativeLayout
+                        android:elevation="2dp"
+                        android:layout_height="100dp"
+                        android:layout_margin="0dp"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_width="match_parent">
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:padding="5dp"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/dettol" />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="From 150" />
+                    <TextView
+                        android:gravity="left"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:text="Dettol Pack Of 4" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/imageseen"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Best Price"/>
+
+                    <RelativeLayout
+                        android:elevation="2dp"
+                        android:layout_height="100dp"
+                        android:layout_margin="0dp"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_width="match_parent">
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:padding="5dp"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/dettol" />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="From 150" />
+                    <TextView
+                        android:gravity="left"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:text="Dettol Pack Of 4" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/imageseen"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Best Price"/>
+
+                    <RelativeLayout
+                        android:elevation="2dp"
+                        android:layout_height="100dp"
+                        android:layout_margin="0dp"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_width="match_parent">
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:padding="5dp"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/dettol" />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="From 150" />
+                    <TextView
+                        android:gravity="left"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:text="Dettol Pack Of 4" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/imageseen"
+                    android:layout_weight="1"
+                    android:layout_marginRight="3dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Best Price"/>
+
+                    <RelativeLayout
+                        android:elevation="2dp"
+                        android:layout_height="120dp"
+                        android:layout_margin="0dp"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_width="match_parent">
+
+                        <ImageView
+                            android:layout_width="121dp"
+                            android:layout_height="92dp"
+                            android:layout_centerInParent="true"
+                            android:foregroundGravity="center_vertical|center"
+                            android:padding="5dp"
+                            android:src="@drawable/dettol" />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="From Rupees 150" />
+                    <TextView
+                        android:gravity="left"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:text="Dettol Pack Of 4" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/imageseen"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Best Price"/>
+
+                    <RelativeLayout
+                        android:elevation="2dp"
+                        android:layout_height="120dp"
+                        android:layout_margin="0dp"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_width="match_parent">
+
+                        <ImageView
+                            android:layout_width="121dp"
+                            android:layout_height="92dp"
+                            android:layout_centerInParent="true"
+                            android:foregroundGravity="center_vertical|center"
+                            android:padding="5dp"
+                            android:src="@drawable/dettol" />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="From Rupees 150" />
+                    <TextView
+                        android:gravity="left"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:text="Dettol Pack Of 4" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/imageseen"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Best Price"/>
+
+                    <RelativeLayout
+                        android:elevation="2dp"
+                        android:layout_height="120dp"
+                        android:layout_margin="0dp"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_width="match_parent">
+
+                        <ImageView
+                            android:layout_width="121dp"
+                            android:layout_height="92dp"
+                            android:layout_centerInParent="true"
+                            android:foregroundGravity="center_vertical|center"
+                            android:padding="5dp"
+                            android:src="@drawable/dettol" />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="From Rupees 150" />
+                    <TextView
+                        android:gravity="left"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:text="Dettol Pack Of 4" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/imageseen"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Best Price"/>
+
+                    <RelativeLayout
+                        android:elevation="2dp"
+                        android:layout_height="120dp"
+                        android:layout_margin="0dp"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_width="match_parent">
+
+                        <ImageView
+                            android:layout_width="121dp"
+                            android:layout_height="92dp"
+                            android:layout_centerInParent="true"
+                            android:foregroundGravity="center_vertical|center"
+                            android:padding="5dp"
+                            android:src="@drawable/dettol" />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="From Rupees 150" />
+                    <TextView
+                        android:gravity="left"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:text="Dettol Pack Of 4" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+            
+        </LinearLayout>
+
+
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

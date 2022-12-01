@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="navigationside">#FFF</color>
+    <color name="backcolour">#2196F3</color>
+    <color name="whitecolour">#ffffff</color>
+    <color name="balackcolour">#000</color>
+    <color name="background">#e5e4e2</color>
+    <color name="quantitybutton">#437c17</color>
+
+<!-- Colour For Categories -->
+
+    <color name="bathtime">#3DDC84</color>
+
+</resources>
